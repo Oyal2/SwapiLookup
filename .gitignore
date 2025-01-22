@@ -1,0 +1,22 @@
+# Binary
+finder
+
+# Environment variables
+.env
+
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
