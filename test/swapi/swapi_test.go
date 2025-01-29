@@ -40,7 +40,6 @@ var _ = Describe("SwapiClient", func() {
 	Describe("SearchPeople", func() {
 		Context("when searching for Luke Skywalker", func() {
 			BeforeEach(func() {
-				// Mock Luke data
 				serverMux.HandleFunc("/people/", func(w http.ResponseWriter, r *http.Request) {
 					json.NewEncoder(w).Encode(&smodel.SearchPeopleResponse{
 						Count: 1,
